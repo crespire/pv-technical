@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { ThreadModel } from '../@types/thread';
 import GridDisplay from './GridDisplay';
 import ListDisplay from './ListDisplay';
+import ToggleSwitch from './ToggleSwitch';
 
 function ThreadIndex() {
   const [threads, setThreads] = useState<ThreadModel[] | null>(null);
@@ -32,9 +33,7 @@ function ThreadIndex() {
 
   return (
     <>
-      <input type="checkbox" id="grid" name="grid" checked={gridDisplay} onChange={toggleDisplay} />
-      <label htmlFor="grid">Grid</label>
-      { gridDisplay ? <p>Grid</p> : <p>List</p> }
+      <ToggleSwitch on={gridDisplay} toggleDisplay={toggleDisplay} />
       { gridDisplay
         ? <GridDisplay threads={threads} />
         : <ListDisplay threads={threads} />
