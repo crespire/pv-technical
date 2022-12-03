@@ -4,7 +4,7 @@ import ThreadPreview from "./ThreadPreview";
 function ListDisplay({threads}: {threads: ThreadModel[]}) {
   
   return (
-    <main>
+    <main className="flex flex-col">
       { threads.map((thread, index) => {
         return <ThreadPreview key={index} thread={thread} />
       })}
