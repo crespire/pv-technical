@@ -15,7 +15,7 @@ function ThreadIndex() {
                       .then(response => response.threads);
       } catch (err) {
         setThreads([]);
-        console.log('Got error: ', err);        
+        console.log('Got error: ', err);
       }
       setThreads(data);
     };
@@ -23,11 +23,18 @@ function ThreadIndex() {
     getThreads();
   }, []);
 
+  const toggleDisplay = () => {
+    setGridDisplay(prev => !prev);
+  }
+
   if (!threads) return <p>Loading...</p>;
   if (threads.length === 0) return <p>There was an error retrieving the data.</p>;
 
   return (
     <>
+      <input type="checkbox" id="grid" name="grid" checked={gridDisplay} onChange={toggleDisplay} />
+      <label htmlFor="grid">Grid</label>
+      { gridDisplay ? <p>Grid</p> : <p>List</p> }
       { gridDisplay
         ? <GridDisplay threads={threads} />
         : <ListDisplay threads={threads} />
