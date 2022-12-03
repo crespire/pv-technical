@@ -33,3 +33,4 @@ Node v18 LTS is required
 run `npm install` to install dependencies. This will install the following dependencies:
 * React Router and React Router DOM and their corresponding types - these packages enable client side routing
 * TailwindCSS, PostCSS and Autoprefixer - these packages enable use of the TailwindCSS utility class library parsing and compiling.
+* DOMPurify and its types allows us to load a post's `com` property without worrying about XSS attacks.
