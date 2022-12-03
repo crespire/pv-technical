@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { ThreadModel } from '../@types/thread';
+import GridDisplay from './GridDisplay';
+import ListDisplay from './ListDisplay';
 
 function ThreadIndex() {
   const [threads, setThreads] = useState<ThreadModel[] | null>(null);
-  const [gridDisplay, setGridDisplay] = useState<boolean>(false);
+  const [gridDisplay, setGridDisplay] = useState(false);
 
   useEffect(() => {
     const getThreads = async () => {
@@ -22,10 +24,16 @@ function ThreadIndex() {
   }, []);
 
   if (!threads) return <p>Loading...</p>;
-  if (threads.length === 0) return <p>There was an error retrieving the data.</p>
+  if (threads.length === 0) return <p>There was an error retrieving the data.</p>;
 
   return (
-    <p>We did it!</p>
+    <>
+      { gridDisplay
+        ? <GridDisplay threads={threads} />
+        : <ListDisplay threads={threads} />
+      }
+    </>
+    
   );
 }
 

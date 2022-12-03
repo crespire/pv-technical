@@ -1,3 +1,7 @@
+export interface PostProps {
+  posts: PostModel[];
+}
+
 export interface PostModel {
   no: number;
   now: string;
