@@ -6,7 +6,7 @@ import ToggleSwitch from './ToggleSwitch';
 
 function ThreadIndex() {
   const [threads, setThreads] = useState<ThreadModel[] | null>(null);
-  const [gridDisplay, setGridDisplay] = useState(false);
+  const [gridDisplay, setGridDisplay] = useState(true);
 
   useEffect(() => {
     const getThreads = async () => {
