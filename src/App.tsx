@@ -4,13 +4,13 @@ import Header from './Header';
 
 function App() {
   return (
-    <>
+    <div className="container mx-auto p-2">
       <Header />
       <main>
         <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
