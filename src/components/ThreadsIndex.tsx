@@ -33,7 +33,7 @@ function ThreadIndex() {
 
   return (
     <>
-      <ToggleSwitch on={gridDisplay} toggleDisplay={toggleDisplay} />
+      <div className="w-full flex justify-center items-center"><ToggleSwitch on={gridDisplay} toggleDisplay={toggleDisplay} /></div>
       { gridDisplay
         ? <GridDisplay threads={threads} />
         : <ListDisplay threads={threads} />

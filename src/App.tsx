@@ -4,7 +4,7 @@ import Header from './Header';
 
 function App() {
   return (
-    <div className="container mx-auto p-2">
+    <div className="container mx-auto p-2 w-full flex flex-col items-center">
       <Header />
       <main>
         <Outlet />

@@ -12,7 +12,12 @@ function ToggleSwitch(props: ToggleSwitchProps) {
     : <>Grid <strong>List</strong></>;
 
   return(
-    <button className="p-2" name="switch" id="switch" onClick={toggleDisplay}>{ display }</button>
+    <button
+      className="p-2"
+      name="switch"
+      id="switch"
+      onClick={toggleDisplay}
+    >{ display }</button>
   );
 }
 
