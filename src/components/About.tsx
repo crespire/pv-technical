@@ -21,6 +21,9 @@ function About() {
         <li>
           Thread preview utilizes fields from the first post as instructed. The <span className="font-mono bg-slate-100 px-1">post.com</span> property could contain HTML and is displayed as sanitized HTML.
         </li>
+        <li>
+          Application layout takes a mobile first design approach, and adjusts as the viewport becomes larger accommodating all screen sizes.
+        </li>
       </ul>
     </article>
   );
