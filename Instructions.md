@@ -17,19 +17,10 @@ https://a.4cdn.org/po/2.json
 	a.    Use “semantic_url” property on first post as the title of the Thread.
 	a.    Use “com” property on first post as the description of the Thread.
 
+Please complete the task using React and/or Node.js. Our evaluators will be looking for React best practices and specialized React knowledge in addition to Javascript & CSS.  
 
-Please complete the task using React and/or Node.js. Our evaluators will be looking for React best practices and specialized React knowledge in addition to Javascript & CSS. 
-Feel free to use any library (own or otherwise) to accomplish the tasks. If possible specify why you chose something specific.
+Feel free to use any library (own or otherwise) to accomplish the tasks. If possible specify why you chose something specific.  
 
-The attached screenshot is for reference purpose only. Feel free to use your own design/aesthetics.
+The attached screenshot is for reference purpose only. Feel free to use your own design/aesthetics.  
 
 Please document and send installation steps we need to take while running your application.
-
-
-Unzip or clone the repository.
-Node v18 LTS is required
-
-run `npm install` to install dependencies. This will install the following dependencies:
-* React Router and React Router DOM and their corresponding types - these packages enable client side routing
-* TailwindCSS, PostCSS and Autoprefixer - these packages enable use of the TailwindCSS utility class library parsing and compiling.
-* DOMPurify and its types allows us to load a post's `com` property without worrying about XSS attacks.
