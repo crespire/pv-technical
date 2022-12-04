@@ -20,10 +20,10 @@ function ThreadPreview({thread}: {thread: ThreadModel}) {
       ref={articleRef}
       onMouseOver={showTooltip}
       onMouseLeave={removeTooltip}
-      className="w-full p-2 bg-inherit border border-solid border-slate-200 \
-                 drop-shadow-none max-w-prose h-36 max-h-36 truncate \
-                 transition ease-out duration-200 hover:-translate-y-2 \
-                 hover:shadow-lg hover:z-100 hover:bg-slate-100 hover:border \
+      className="h-36 max-h-36 w-full p-2 bg-inherit border border-solid \
+                 border-slate-200 truncate transition ease-out \
+                 duration-200 hover:-translate-y-2 hover:shadow-lg \ 
+                 hover:z-100 hover:bg-slate-100 hover:border \
                  hover:border-solid hover:border-slate-400"
     >
       <section className="truncate">
