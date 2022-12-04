@@ -2,11 +2,10 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div>
-      <nav>
-        <Link to='/'>Home</Link>
-      </nav>
-    </div>
+    <nav className="w-1/4 max-w-sm flex justify-around">
+      <Link to='/'>Home</Link>
+      <Link to='/about'>About</Link>
+    </nav>
   );
 }
 
