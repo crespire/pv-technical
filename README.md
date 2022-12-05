@@ -38,12 +38,9 @@ Please document and send installation steps we need to take while running your a
 ## MVP
 * Hit server for data (json file)
 * Threads have posts.
-  * Threads is an array of objects.
-    * Each object has an object with property `posts` which contains an array of post objects
-
-User interactions:
-* App threads display must be mobile first.
-* App threads display should support grid or list view
+  * Each post objects has properties, some are optional.
+* App styling must be mobile first.
+* App display should support grid or list view
 * Each thread preview should use the first post data as a preview:
   * `semantic_url` is the Title
   * `com` is the body/description
