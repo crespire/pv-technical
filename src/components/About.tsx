@@ -3,8 +3,7 @@ function About() {
     <article className="max-w-prose my-4 leading-loose">
       This assignment was completed by Simmon Li. It implements:
       <ul className="list-disc list-inside">
-        <li>Application reads data. As discussed, there were some <span className="font-mono bg-slate-100 px-1">CORS</span> issues trying to access the data from server. So the data is read from a local <span className="font-mono bg-slate-100 px-1">.json</span> file.
-            While I was not able to retrieve data from the server for this project, I have done so in the past. Samples demonstrating remote data retrieval:
+        <li>Application reads data. I've implemented a CORS proxy in order to read the remote data. Failing that, the application loads local data. I also have samples demonstrating remote data retrieval in my other applications:
           <ul className="ml-4 list-[circle] list-inside">
             <li><a className="underline" href="https://github.com/crespire/buysell/blob/main/client/src/providers/AuthProvider.tsx">Fetch from server for multiple authentication actions</a></li>
             <li><a className="underline" href="https://github.com/crespire/js-memory-cards/blob/main/src/App.js#L12">Get Deck of Cards API response</a></li>
