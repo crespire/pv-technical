@@ -9,9 +9,9 @@ The repository for this application is located on Github: [https://github.com/cr
 1. Clone or download the repository and unzip to a folder if required
 1. Navigate to the repository
 1. Run `npm install` to install dependencies. This will install the following packages:
-  * React Router, React Router DOM and the corresponding type declarations - these packages enable client side routing
-  * TailwindCSS, PostCSS and Autoprefixer - these packages enable use of the TailwindCSS utility class library.
-  * DOMPurify and the corresponding types to load a post's `com` property safely as HTML.
+	  * React Router, React Router DOM and the corresponding type declarations - these packages enable client side routing
+  	* TailwindCSS, PostCSS and Autoprefixer - these packages enable use of the TailwindCSS utility class library.
+  	* DOMPurify and the corresponding types to load a post's `com` property safely as HTML.
 1. Run `npm start` to run the local development server.
 
 # Assessment Instructions
@@ -45,4 +45,3 @@ Please document and send installation steps we need to take while running your a
   * `semantic_url` is the Title
   * `com` is the body/description
     * this property can contain HTML.
-
